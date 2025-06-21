@@ -10,23 +10,30 @@ public class Ex15 {
         System.out.println("escolha as opcoes (1 para saque, 2 para deposito e 3 para saldo)");
          System.out.print("digite a opcao desejada:");
         int opcao = scanner.nextInt();
-        int deposito;
+        int saldo=1400;
 
-
-        
         switch(opcao){
-            case 1:
-             
-               break;
+            case 1: System.out.print("Digite o valor para saque: R$ ");
+                    double saque = scanner.nextDouble();
+                    if (saque>0 && saque<=saldo) {
+                        saldo -= saque;
+                        System.out.println("Saque realizado com sucesso!");
+                    } else {
+                        System.out.println("Saque inválido ou saldo insuficiente.");
+                    }
+                    break;
             case 2:
-
-               break;
+            System.out.print("Digite o valor para depósito: R$ ");
+                    double deposito = scanner.nextDouble();
+                    if (deposito > 0) {
+                        saldo += deposito;
+                        System.out.println("Depósito realizado com sucesso!");
+                    } else {
+                        System.out.println("Valor inválido.");
+                    }
+                    break;
             case 3:
-            System.out.println("Quanto voce deseja depositar?");
-            deposito = scanner.nextInt();
-               break;
-            default:
-               System.out.println("opcao nao identificada"); 
+             System.out.println("Seu saldo atual é: R$ " + saldo);
                break;
 
            
