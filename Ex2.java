@@ -13,15 +13,17 @@ public class Ex2 {
         System.out.println("Matriz 2x2:");
         for (int linha = 0; linha < 2; linha++) {
             for (int coluna = 0; coluna < 2; coluna++) {
-                System.out.print(numeros[linha][coluna] + " ");
+              System.out.print(numeros[linha][coluna] + " "); 
             }
-            System.out.println();
+            System.out.println(); 
+           
+            }
+     scanner.close();
 }
-                scanner.close();
+                
 
  }
-}
-    
+
 
         
 

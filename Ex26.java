@@ -13,7 +13,7 @@ public class Ex26 {
         for (int i = 1; i <= 10; i++) {
     
             double multiplicacao = n*i;
-            System.out.println(n+" x "+ i +" = "+ multiplicacao);
+             System.out.println(n+" x "+ i +" = "+ multiplicacao);
 
             
         }

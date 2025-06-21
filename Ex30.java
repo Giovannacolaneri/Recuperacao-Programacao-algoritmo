@@ -12,7 +12,7 @@ public static void main(String[] args) {
         int n = scanner.nextInt(); 
 
         int primeiro = 0;  
-        int segundo = 1; 
+      int segundo = 1; 
 
         System.out.println("Sequência de Fibonacci com " + n + " números:");
 
